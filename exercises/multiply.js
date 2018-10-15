@@ -9,7 +9,14 @@
  */
 
 // Your code :
-
+function multiply(arg1,arg2){
+    let cpt = 0;
+    let mult = 0;
+    while(cpt < arg2){
+        mult += arg1;
+    }
+    return mult;
+}
 //* Begin of tests
 const assert = require('assert')
 

@@ -11,7 +11,17 @@
  */
 
 // Your code :
-
+function sign(arg1){
+    if(arg1>0){
+        return 1
+    }
+    else if(arg1<0){
+        return -1;
+    }
+    else{
+        return 0;
+    }
+}
 //* Begin of tests
 const assert = require('assert')
 

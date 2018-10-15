@@ -5,7 +5,13 @@
  * and return the total
  *
  */
-
+function total(tabParam){
+    let totaaa = 0;
+    for(let i = 0; i<tabParam.length; i++){
+        totaaa+= tabParam[i] ;
+    }
+    return totaaa;
+}
 
 //* Begin of tests
 const assert = require('assert')
