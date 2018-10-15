@@ -1,6 +1,8 @@
 {
   "private": true,
   "index": "primitives.js",
+  "author": "Joachim Bertrand :-)",
+
   "tests": [
     {
       "name": "primitives",
@@ -132,3 +134,4 @@
     "test": "./tester"
   }
 }
+

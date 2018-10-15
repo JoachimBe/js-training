@@ -7,7 +7,11 @@
  */
 
 // Your code :
+function id(firstparam){
+    return firstparam;
+}
 
+id(5);
 //* Begin of tests
 const assert = require('assert')
 

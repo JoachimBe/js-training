@@ -9,6 +9,10 @@
 
 // Your code :
 
+ const str= '1337';
+ const num= 42;
+ const bool= false;
+ let undef;
 
 //* Begin of tests
 const assert = require('assert')
