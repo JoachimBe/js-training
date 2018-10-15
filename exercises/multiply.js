@@ -12,9 +12,19 @@
 function multiply(arg1,arg2){
     let cpt = 0;
     let mult = 0;
-    while(cpt < arg2){
-        mult += arg1;
+    if(arg2 > 0){
+        while(cpt < arg2){
+            mult += arg1;
+            cpt++
+        }
     }
+    else{
+        while(cpt > arg2){
+            mult -= arg1;
+            cpt --;
+        }
+    }
+
     return mult;
 }
 //* Begin of tests
