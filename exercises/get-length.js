@@ -8,7 +8,9 @@
  */
 
 // Your code :
-
+function getLength(numOrTable){
+    return numOrTable.length;
+}
 //* Begin of tests
 const assert = require('assert')
 
