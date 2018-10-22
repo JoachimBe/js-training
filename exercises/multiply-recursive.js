@@ -10,6 +10,57 @@
  */
 
 // Your code :
+let recur = 0;
+let result = 0;
+function multiply(number1, number2){
+    if(number2 === 0 || number1 === 0){
+        return 0;
+    }
+    let stock_result = 0;
+    if(number1 > number2){
+        if(recur < Math.abs(number1)) {
+            result += Math.abs(number2);
+            recur ++;
+            return multiply(number1, number2);
+        }
+        if(recur === Math.abs(number1)|| recur === Math.abs(number2)){
+            if((number1 < 0) && (number2 > 0) || ((number2 < 0) && (number1 > 0)) && (((number2 < 0) && (number1 > 0))||((number1 < 0) && (number2>0)))){
+                stock_result = result;
+                result = 0;
+                recur = 0;
+                return -stock_result;
+            }
+            else{
+                stock_result = result;
+                result = 0;
+                recur = 0;
+                return stock_result;
+            }
+        }
+    }
+    if(number2 > number1){
+        if(recur < Math.abs(number2)) {
+            result += Math.abs(number1);
+            recur ++;
+            return multiply(number1, number2);
+        }
+        if(recur === Math.abs(number1)|| recur === Math.abs(number2)){
+            if((number1<0)&&(number2>0)|| ((number2<0) && (number1>0)) && (((number2<0) && (number1>0))||((number1<0)&& (number2>0)))){
+                stock_result = result;
+                result = 0;
+                recur = 0;
+                return -stock_result;
+            }
+            else{
+                stock_result = result;
+                result=0;
+                recur = 0;
+                return stock_result;
+            }
+        }
+    }
+
+}
 
 //* Begin of tests
 const assert = require('assert')
